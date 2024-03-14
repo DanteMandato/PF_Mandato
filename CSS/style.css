@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Exo2;
+    src: url(../assets/fonts/Exo_2/static/Exo2-Regular.ttf);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: Exo2, sans-serif;
+}
+
+p, span, a, li, ul, button, input{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*estilo del home*/
+
+header{
+    padding: 20px;
+    background-color: rgba(0, 255, 255, 0.534);
+    border-style:groove;
+    border-color: rgba(0, 0, 0, 0.233);
+} 
+
+nav ul{
+    list-style: none;
+    position: absolute; 
+    right: 20px;
+    top: 40px;
+}
+nav ul li{
+    display: inline;
+    margin: 0 10px;
+    color: black;
+}
+header nav a img{
+    display: inline;
+}
+header nav h2{
+    display: inline;
+    position: absolute;
+}
+
+div.ir-arriba{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+    background-color:rgba(0, 255, 255, 0.342);
+    border: none;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1;
+}
+
+main  .principal-foto{
+    background-position: bottom;
+    background-size: cover;
+    margin-bottom: 10px;
+    height: 700px;
+    width: 100%;
+    border-style:none;
+}
+
+main div strong p{
+    font-size: 32px ;
+    font-weight: 700;
+    width: 400px;
+    align-self:center;
+    padding: 20px 0 20px;
+    position: relative;
+    bottom: 700px;
+    text-shadow: -0.14em 0.07em 0.75em #262d3f;
+}
+
+article h2{
+    position:relative;
+    padding: 20px;
+    text-align: center;
+    top: 20px;
+    background-color: rgb(109, 109, 109);
+    font-size: 30px;
+}
+
+h1{
+    position:relative;
+    padding: 20px;
+    text-align: center;
+    bottom: 180px;
+    font-size: 60px;
+    font-style:oblique;
+}
+
+main div.texto p{
+    font-size: 32px;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    position: relative;
+    bottom:100px;
+    text-shadow: -0.14em 0.07em 0.75em #262d3f;
+}
+
+
+.parrafo-destacado2 {
+    color: green;
+    font-size: 40px ;
+    position: relative;
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    top: 30px;
+    margin-left: 200px;
+}
+
+.container img {
+    margin-bottom: 20px; 
+    justify-content: space-between;
+}
+
+div.obras-sociales{
+    position:relative;
+    padding: 20px;
+    text-align: center;
+    top: 20px;
+}
+div.obras-sociales h3{
+    border-bottom: 2px solid black; 
+    width: 100%; 
+    display: inline-block; 
+    font-size: 30px;
+}
+
+
+footer {
+    text-align: center;
+    background-color: rgb(70, 70, 70);
+}
+
+.footer-contacto {
+    display: inline-flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.derechos {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+/* estilo de nosotros*/
+
+main section .principal-foto{
+    background-position: bottom;
+    background-size: cover;
+    margin-bottom: 10px;
+    height: 700px;
+    width: 100%;
+    border-style: none;
+}
+
+
+main section h1 {
+    position: absolute;
+    top: 100px; 
+    left: 40%;
+    right: 40%;
+    margin: 0;
+    padding: 10px 0 0 0; 
+    text-align: center;
+    color: rgb(78, 78, 78); 
+    z-index: 1; 
+    display: inline;
+}
+
+main div p.primer-parrafo{
+    text-align: center;
+    font-size: 32px;
+}
+
+
+
+
+/* estilo nosotros */
+
+.hero-nosotros{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    align-content:space-around;
+    padding: 20px auto;
+}
+
+main section div.hijo1{
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+    top: 50px; left: 700px;
+    border-style: outset;
+    width: 600px ;
+    background-color: rgba(0, 38, 255, 0.253);
+}
+
+
+main section div.hijo1 h3{
+    border-bottom: 2px solid black;
+    width: 100%;
+    font-size: 30px;
+}
+
+
+.equipo-kine{
+    border-bottom: 2px solid black; 
+    width: 75%; 
+    margin: 0 auto; 
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 26px;
+    padding: 30px 20px 10px 20px;
+}
+
+div.miembro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+div.miembro ul{
+    list-style: none;
+    
+}
+
+
+/* estilo de servicios*/
+
+main  section img.foto1{
+    background-position: bottom;
+    background-size: cover;
+    margin-bottom: 10px;
+    height: 700px;
+    width: 100%;
+    border-style:none;
+}
+
+main section h2.titulo{
+    font-size: 32px ;
+    font-weight: 700;
+    width: 400px;
+    align-self:center;
+    padding: 20px 0 20px;
+    position: relative;
+    bottom: 700px;
+    text-shadow: -0.14em 0.07em 0.75em #262d3f;
+}
+
+.txt-apertura{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    font-weight: 900;
+    font-size: 36px;
+    padding: 10px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.432);
+    margin: auto;
+    border-bottom: 1px solid black;
+}
+
+.hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hijo-container {
+    width: 35%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.212);
+}
+
+.hijo-container h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 26px;
+}
+
+.hijo-container p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.hijo-container img{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+/* estilo de contacto*/
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    position: absolute;
+    right: 50px;
+    background-color: rgb(167, 255, 229);
+}
+
+
+
+
+/* estilo turnos*/
+.texto-info{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: #262d3f;
+    width: 50%;
+    margin-top: 30px;
+}
+.texto-info h3{
+    margin-bottom: 20px;
+    font-size: 26px;
+    text-decoration: underline;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 10px;
+
+}
+
+
+iframe{
+    width: 100%;
+    padding: 20px;
+}
