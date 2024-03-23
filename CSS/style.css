@@ -75,13 +75,48 @@ div.ir-arriba{
     z-index: 1;
 }
 
-main  .principal-foto{
-    background-position: bottom;
-    background-size: cover;
-    margin-bottom: 10px;
-    height: 700px;
-    width: 100%;
-    border-style:none;
+.slider-frame {
+	width: 100%;
+    height: 720px;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding-bottom: 100px;
+	width: 300%;
+	animation: slide 15s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+    position: relative;
+}
+
+.slider-frame img {
+	width: 100%;
+
+}
+
+.texto-slide{
+    position: absolute;
+    text-align: center;
+    top: 250px;
+    padding: 0 400px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
 }
 
 main div strong p{
@@ -111,16 +146,17 @@ h1{
     bottom: 180px;
     font-size: 60px;
     font-style:oblique;
+    margin-top: 200px
 }
 
 main div.texto p{
     font-size: 32px;
     text-align: center;
-    padding: 20px 40px;
+    padding: 20px 60px;
     margin: 0 auto;
     position: relative;
     bottom:100px;
-    text-shadow: -0.14em 0.07em 0.75em #262d3f;
+    text-shadow: -0.14em 0.07em 0.75em #262d3f8a;
 }
 
 
@@ -132,17 +168,16 @@ main div.texto p{
 }
 .container {
     display: flex;
-    flex-direction:row;
     align-items: center;
     text-align: center;
+    justify-content: center;
     padding: 20px;
     top: 30px;
-    margin-left: 200px;
 }
 
 .container img {
     margin-bottom: 20px; 
-    justify-content: space-between;
+    margin-left: 30px;
 }
 
 .obras-sociales{
@@ -222,9 +257,12 @@ main section h1 {
     display: inline;
 }
 
-main div p.primer-parrafo{
+p.primer-parrafo{
     text-align: center;
     font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
 }
 
 
@@ -238,22 +276,25 @@ main div p.primer-parrafo{
     padding: 20px auto;
 }
 
-main section div.hijo1{
+.hijo1{
     font-size: 26px;
     font-weight: 700;
     text-align: center;
     padding: 20px;
     top: 50px; left: 700px;
     border-style: outset;
+    border-radius: 4px;
     width: 600px ;
+    margin-bottom: 20px;
     background-color: rgba(0, 38, 255, 0.253);
 }
 
 
-main section div.hijo1 h3{
+div.hijo1 h3{
     border-bottom: 2px solid black;
     width: 100%;
     font-size: 30px;
+    margin-bottom: 10px;
 }
 
 
@@ -314,6 +355,7 @@ main section h2.titulo{
     padding: 10px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.432);
     margin: auto;
+    margin-top: 60px;
     border-bottom: 1px solid black;
 }
 
