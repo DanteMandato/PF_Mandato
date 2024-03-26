@@ -11,27 +11,19 @@
     <title>Centro Kinesico</title>
 </head>
 <body>
-<header> 
-        <nav>
-            <a href="../index.html"><img src="../img/Icon/favicon-32x32.png" alt="logo de la empresa" ></a>
+    <header> 
+        <nav class="navbar">
+            <div>
+            <a href="../index.html"><img src="../img/Icon/favicon-32x32.png" alt="logo de la empresa"></a>
             <h2>KinesiSalud</h2>
             <h3>Kinesiología y Fisiatria</h3>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="../pages/nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="../pages/servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="../pages/turnos.html">Turnos</a>
-                </li>
-                <li>
-                    <a href="../pages/contacto.html">Contacto</a>
-                </li>
+            </div>
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                <li><a href="../pages/servicios.html">Servicios</a></li>
+                <li><a href="../pages/turnos.html">Turnos</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
 </header>
@@ -40,34 +32,44 @@
 </div>
 <main>
     <section>
-        <h2>Informacion de Contacto</h2>
-        <p class="infoContacto">Información de contacto...
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum illum error veniam tempora nisi temporibus laborum fugiat eligendi perferendis est! Quibusdam natus fugiat repudiandae, nemo aut ullam unde adipisci. Ipsum?
-            A rerum minus ex esse neque reprehenderit assumenda. Eos optio doloremque obcaecati iure odit qui voluptatum ipsa maiores nobis vitae, similique amet cum facere natus ullam, dicta maxime doloribus. Vel.
-            Ipsa quos consequuntur iusto impedit, nostrum perspiciatis. Possimus repudiandae, non velit maiores illum provident esse amet! Cupiditate laborum dicta numquam, excepturi, necessitatibus minus quaerat, explicabo modi laudantium ut laboriosam fugiat?
-            Nemo commodi nulla ratione repellat at blanditiis id ea animi. Labore, asperiores dolor minus aspernatur explicabo unde voluptates alias inventore officiis ab repellendus suscipit illo ad accusantium tempore dolorem eveniet?
-            Rem reiciendis distinctio dolorum vero laboriosam sapiente eos laborum voluptatem! Sint alias ducimus molestias eligendi delectus. Consequuntur, quos ab, vel eum quae modi assumenda, voluptas animi laborum voluptatem unde dolor?
-            Autem consequatur beatae in iure dolore facere repellat dolorem voluptate? Temporibus necessitatibus possimus harum odit mollitia eaque atque dicta, nostrum incidunt blanditiis nemo ipsam nisi veritatis rerum! Beatae, quas consequatur.
-            Odio, dolorem sint consequuntur ipsum nam accusantium deleniti quod nisi ullam explicabo, voluptate modi ipsa tempore sequi quasi, quam porro? Aspernatur dicta vel eos ab doloremque voluptatem temporibus animi a!
-            Odio quas nam possimus accusamus, voluptatem aliquam error! Voluptas, enim et odit asperiores ipsam quidem optio maxime? Voluptatem accusamus quam, doloribus sapiente repudiandae autem tenetur, error fuga iste, modi non?
-            Iure, numquam! Aspernatur ea explicabo cupiditate recusandae voluptatem corrupti et corporis ad laudantium. Aut vel dolorem voluptatem, nulla reiciendis, eveniet aperiam nihil rem, qui hic sed beatae minima deleniti debitis.
-            Quod aperiam cum esse libero necessitatibus animi reiciendis maiores inventore, repellat accusantium sit reprehenderit pariatur deleniti non molestiae tempore dolorem recusandae! Dolorum totam nihil sint ut necessitatibus atque cupiditate fugiat.
-        </p>
+    <div class="infoContacto-padre">
+        <div class="infoContacto">
+            <h2>Informacion de Contacto</h2>
+            <p>Información de contacto...
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum illum error veniam tempora nisi temporibus laborum fugiat eligendi perferendis est! Quibusdam natus fugiat repudiandae, nemo aut ullam unde adipisci. Ipsum?
+                A rerum minus ex esse neque reprehenderit assumenda. Eos optio doloremque obcaecati iure odit qui voluptatum ipsa maiores nobis vitae, similique amet cum facere natus ullam, dicta maxime doloribus. Vel.
+                Ipsa quos consequuntur iusto impedit, nostrum perspiciatis. Possimus repudiandae, non velit maiores illum provident esse amet! Cupiditate laborum dicta numquam, excepturi, necessitatibus minus quaerat, explicabo modi laudantium ut laboriosam fugiat?
+                Nemo commodi nulla ratione repellat at blanditiis id ea animi. Labore, asperiores dolor minus aspernatur explicabo unde voluptates alias inventore officiis ab repellendus suscipit illo ad accusantium tempore dolorem eveniet?
+            </p>
+        </div>
         <div class="containerForm">
-            <fieldset>
-                <legend>Envia tu Consulta</legend>
+            <form>
+                <legend>Envía tu Consulta</legend>
+                <div class="select-cobertura">
+                    <label for="cobertura">Cobertura:</label>
+                    <select id="cobertura" name="cobertura">
+                        <option value="" disabled selected>Seleccione su Cobertura</option>
+                        <option value="cobertura1">IOMA</option>
+                        <option value="cobertura2">Luis Pasteur</option>
+                        <option value="cobertura3">Avalian</option>
+                        <option value="cobertura3">OSPEDYM</option>
+                    </select>
+                </div>
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-                <label for="Telefono">Telefono:</label>
-                <input type="telefono" id="telefono" name="telefono" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
                 <label for="mensaje">Consulta:</label>
                 <textarea id="mensaje" name="mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-                <button type="submit">Reset</button>
-            </fieldset>
+                <div class="buttons">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
         </div>
+    </div>
         <div class="obras-sociales">
             <h3>Obras Sociales</h3>
                 <img src="../img/home/Obras sociales/obra-social-1.jpg" alt="obra-social-1" width="80px" height="80px">
