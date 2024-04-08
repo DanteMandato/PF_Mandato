@@ -1,0 +1,63 @@
+/* background */
+/* botones */
+/* botones formulario */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Exo2;
+  src: url(../assets/fonts/Exo_2/static/Exo2-Regular.ttf);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Exo2, sans-serif;
+  color: #000000;
+}
+
+p, span, a, li, ul, button, input {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  height: 100%;
+  background: linear-gradient(45deg, rgba(145, 252, 245, 0.8784313725), rgba(152, 226, 255, 0.8784313725), rgba(111, 167, 252, 0.8784313725));
+  background-size: 400% 400%;
+  animation: gradient 12s ease-in infinite;
+}
+
+/*boton ir arriba*/
+div.ir-arriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 42px;
+  height: 42px;
+  background-color: rgba(0, 255, 255, 0.342);
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 1;
+}
+
+/* botones formulario */
+.containerForm button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #F6995C;
+  color: #000;
+  cursor: pointer;
+  box-shadow: #262d3f 2px 2px 2px 2px;
+}
+
+.containerForm button:hover {
+  background-color: #0056b3;
+  color: #91fcf5;
+}
+
+/*# sourceMappingURL=main.css.map */
