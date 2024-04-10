@@ -1,0 +1,148 @@
+// Título y texto del home
+h1 {
+    &.h1-home {
+        position:relative;
+        padding: 20px;
+        text-align: center;
+        bottom: 180px;
+        font-size: 45px;
+        font-style:oblique;
+        margin-top: 200px
+    }
+}
+
+.texto {
+    font-size: 26px;
+    text-align: center;
+    padding: 20px 60px;
+    margin: 0 auto;
+    position: relative;
+    bottom:100px;
+    text-shadow: -0.14em 0.07em 0.75em #262d3f8a;
+}
+
+.parrafo-destacado2 {
+    color: rgb(47, 156, 3);
+    font-size: 28px ;
+    position: relative;
+    text-align: center;
+}
+
+// Contenedor de pasos a seguir
+h2 {
+    &.titulo-lesion {
+        position: relative;
+        padding: 20px;
+        margin: 10px 5px;
+        text-align: center;
+        top: 20px;
+        background-color: rgb(109, 109, 109);
+        font-size: 28px;
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    top: 30px;
+
+    img {
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+}
+
+// scss/pages/home.scss
+
+.obras-sociales {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+
+    h3 {
+        border-bottom: 2px solid black;
+        width: 100%;
+        display: inline-block;
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+}
+
+/*vista laptop/tablet hasta 1023px*/
+@media (max-width: 1023px) {
+    /*h1*/
+    h1{
+        font-size: 45px;
+    }
+    /*texto apertura debajo del h1*/
+    .texto{
+        font-size: 22px;
+    }
+    .parrafo-destacado2{
+        font-size: 30px;
+    }
+    /*article*/
+    article h2{
+        font-size: 25px;
+    }
+    .container img{
+        max-width: 100px;
+        max-height: 100px;
+    }
+    .arrow{
+        width: 60px;
+        height: 60px;
+    }
+        /*obras sociales*/
+        .obras-sociales h3{
+            font-size: 25px;
+        }
+        .obras-sociales img{
+            max-width: 60px;
+            max-height: 60px;
+    }
+}
+/*diseño responsive exclusivo mobile hata 576px*/
+
+@media (max-width: 576px){
+        /*article*/
+        h1{
+            font-size: 35px;
+        }
+        .texto{
+            font-size: 22px;
+            padding: 10px;
+        }
+        .parrafo-destacado2{
+            font-size: 23px;
+            padding: 10px;
+        }
+        article h2{
+            font-size: 22px;
+        }
+        .container{
+        display: flex;
+        flex-direction: column;
+        }
+        .arrow{
+            margin-top: 20px;
+        }
+        .container p{
+            font-size: 15px;
+        }
+        /*obras sociales*/
+        .obras-sociales h3{
+            font-size: 23px;
+        }
+}

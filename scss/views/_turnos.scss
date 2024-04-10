@@ -1,0 +1,55 @@
+.infoTurnos-padre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .texto-info{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        border: $border-color-primary;
+        width: 50%;
+        margin-top: 30px;
+        padding: 20px;
+        font-size: 22px;
+        h1{
+            margin-bottom: 20px;
+            font-size: 26px;
+            text-decoration: underline;
+            border-bottom: $border-color-primary;
+        }
+    }
+    .container-turno {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 200px; 
+        align-items: flex-end; 
+        max-width: fit-content; 
+        margin-left: auto; 
+        margin-right: 20px; 
+    }
+    .horarios{
+        border: $border-color-primary;
+        border-style: groove;
+        border-radius: 6px;
+        padding: 10px;
+        background-color: $background-color-secondary;
+        box-shadow: $color-boxshadow 2px 2px 3px;
+        h2{
+            margin-bottom: 10px;
+            text-decoration-line: underline;
+        }
+        ul{
+            list-style: none;
+        }
+    }
+    .contacto{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 188px;
+    }
+}

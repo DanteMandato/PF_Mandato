@@ -2,5 +2,14 @@
 @import "base/reset";
 @import "base/fonts";
 @import "base/tipography";
-@import "layouts/background";
-@import "components/buttons"
+@import "base/background";
+@import "components/buttons";
+@import "layouts/header";
+@import "layouts/slider";
+@import "layouts/footer";
+@import "views/home";
+@import "views/nosotros";
+@import "views/servicios";
+@import "views/contacto";
+@import "views/turnos";
+@import "layouts/iframe";

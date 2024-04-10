@@ -1,0 +1,110 @@
+/* estilo de nosotros*/
+
+.primer-parrafo{
+    text-align: center;
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.container-nosotros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+.hijo1 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+    border-style: outset;
+    border-radius: 4px;
+    width: 550px;
+    height: 600px;
+    margin-bottom: 20px;
+    background-color: $background-color-secondary;
+    box-shadow: 2px 2px 5px $color-boxshadow;
+    .hijo1 h3 {
+        border-bottom: 2px solid $border-color-primary;
+        width: 100%;
+        font-size: 28px;
+        margin-bottom: 10px;
+        }
+    }
+
+    /* presentacin del equipo */
+
+.equipo-kine{
+    border-bottom: 2px solid $border-color-primary; 
+    width: 75%; 
+    margin: 0 auto; 
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 26px;
+    padding: 30px 20px 10px 20px;
+}
+
+/* contenedor de quipo de kinesiologos*/
+
+.miembro--padre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    justify-content: space-evenly;
+
+    .miembro--hijo{
+        border: 1px solid $border-color-primary;
+        border-radius: 6px;
+        box-shadow:  2px 2px 5px $color-boxshadow;
+        padding: 10px;
+        margin: 10px;
+        background-color: $background-color-secondary;
+        transition: transform 0.3s ease;
+        &:hover {
+            transform: scale(1.1);
+        }
+        ul {
+        list-style: none;
+        }
+    }
+}
+/*vista laptop/tablet hasta 1023px*/
+@media (max-width: 1023px) {
+    /*parrafo apertura por debajo del slide*/
+    .primer-parrafo{
+        font-size: 22px;
+        margin-top: 0;
+    }
+    /*contenedor valores*/
+    .hero-nosotros{
+        display: flex;
+        flex-direction: column;
+    }
+    .hijo1{
+        font-size: 20px;
+        width: 450px;
+    }
+}
+/*diseño responsive exclusivo mobile/tablet hata 992px*/
+@media (max-width: 992px){
+    /*equipo de kinesiologos*/
+    .miembro-padre{
+        display: flex;
+        flex-direction: column;
+    }
+    .miembro-hijo img{
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+/*diseño responsive exclusivo mobile hata 576px*/
+.equipo-kine{
+    font-size: 20px;
+}

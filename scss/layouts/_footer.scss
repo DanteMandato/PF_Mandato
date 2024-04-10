@@ -1,0 +1,41 @@
+footer {
+    text-align: center;
+    background-color: $background-color-footer;
+    p {
+        color: $color-text-footer;
+    }
+}
+.footer-contacto {
+    display: inline-flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    a {
+        color: $color-text-footer;
+    }
+    img {
+        margin-left: 60px;
+        margin-right: 5px;
+    }
+}
+.derechos {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*vista laptop/tablet hasta 1023px*/
+@media (max-width: 1023px) {
+    .footer-contacto{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+}
+
+/*diseño responsive exclusivo mobile hata 576px*/
+@media (max-width: 576px){
+    footer{
+        font-size: 15px;
+    }
+}

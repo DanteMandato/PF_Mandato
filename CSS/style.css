@@ -99,10 +99,10 @@ header{
     color:rgb(185, 255, 251)
 }
 
-header nav a img{
+.container-logo{
     display: inline;
 }
-header nav h2{
+.container-logo h2{
     display: inline;
     position: absolute;
 }
@@ -289,7 +289,7 @@ footer p{
 
 /*contenedor de valores*/
 
-.hero-nosotros{
+.container-nosotros{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -313,14 +313,14 @@ footer p{
     box-shadow: 2px 2px 5px #262d3ff6;
 }
 
-div.hijo1 h3{
+.hijo1 h3{
     border-bottom: 2px solid black;
     width: 100%;
     font-size: 28px;
     margin-bottom: 10px;
 }
 
-/* contenedor de quipo de kinesiologos*/
+/* presentacin del equipo */
 
 .equipo-kine{
     border-bottom: 2px solid black; 
@@ -332,7 +332,9 @@ div.hijo1 h3{
     padding: 30px 20px 10px 20px;
 }
 
-.miembro-padre{
+/* contenedor de quipo de kinesiologos*/
+
+.miembro--padre{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -341,11 +343,7 @@ div.hijo1 h3{
     justify-content: space-evenly;
 }
 
-div.miembro-hijo ul{
-    list-style: none;
-}
-
-.miembro-hijo{
+.miembro--hijo{
     border: 1px solid black;
     border-radius: 6px;
     box-shadow:  2px 2px 5px #262d3ff6;
@@ -353,33 +351,21 @@ div.miembro-hijo ul{
     margin: 10px;
     background-color: #fefdede8;
 }
-
-.miembro-hijo{
+.miembro--hijo{
     transition: transform 0.3s ease;
 }
-
-.miembro-hijo:hover{
+.miembro--hijo:hover{
     transform: scale(1.1);
 }
-
+.miembro--hijo ul{
+    list-style: none;
+}
 
 /* estilo de servicios*/
 
-main  section img.foto1{
-    background-position: bottom;
-    background-size: cover;
-    margin-bottom: 10px;
-    height: 700px;
-    width: 100%;
-    border-style:none;
-}
-
 .titulo-servicios{
-    display: flex;
-    justify-content: center;
     text-align:center;
     width: 50%;
-    font-weight: 900;
     font-size: 36px;
     padding: 10px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.432);
@@ -442,7 +428,7 @@ main  section img.foto1{
     margin-top: 10px;
     margin-left: 20px;
     border-bottom: #000000;
-    font-size: 26px;
+    font-size: 32px;
     text-decoration-line: underline;
 }
 
@@ -559,7 +545,6 @@ main  section img.foto1{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .texto-info{
@@ -573,12 +558,8 @@ main  section img.foto1{
     padding: 20px;
     font-size: 22px;
 }
-.turnosimg{
-    display:flex;
-    justify-content: center;
-    width: 500px;
-}
-.texto-info h3{
+
+.texto-info h1{
     margin-bottom: 20px;
     font-size: 26px;
     text-decoration: underline;
@@ -607,19 +588,17 @@ main  section img.foto1{
 }
 .horarios h2{
     margin-bottom: 10px;
-    border-bottom: #262d3f;
+    text-decoration-line: underline;
 }
-
+.horarios ul{
+    list-style: none;
+}
 .contacto{
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
     margin-right: 188px;
-}
-
-.horarios ul{
-    list-style: none;
 }
 
 /* mapa */
@@ -630,7 +609,7 @@ iframe{
 
 /* Diseño Responsive*/
 
-/*vista mobile/tablet hasta 1023px*/
+/*vista laptop/tablet hasta 1023px*/
 
 /*navbar*/
 
@@ -647,7 +626,7 @@ iframe{
         align-items: center;
     }
     .menu li {
-        margin: 10px 0; /* Espacio entre elementos */
+        margin: 10px 0; 
     }
 /* texto del carrusel*/
 
@@ -705,7 +684,7 @@ iframe{
     flex-direction: row;
 }
 
-/* page nosotros*/
+/* page nosotros */
 
 /*parrafo apertura por debajo del slide*/
 
@@ -726,7 +705,7 @@ iframe{
 }
 }
 
-/*diseño responsive exclusivo mobile hata 992px*/
+/*diseño responsive exclusivo mobile/tablet hata 992px*/
 
 @media (max-width: 992px){
 

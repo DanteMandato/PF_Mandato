@@ -1,13 +1,15 @@
 $color-text: #000000;
+$color-text-footer: #fff;
 
 /* background */
 $background-color-primary: linear-gradient(45deg, #91fcf5e0,#98e2ffe0,  #6fa7fce0);
 $background-color-secondary: #fefdede8;
 $background-color-terciary: #F8F6E3;
+$background-color-footer: rgb(70, 70, 70);
 
 /* botones */
 
-$color-background-flecha: rgba(0, 255, 255, 0.342);
+$background-color-flecha: rgba(0, 255, 255, 0.342);
 
 /* botones formulario */
 
@@ -16,3 +18,6 @@ $color-background-button-secondary: #0056b3;
 $color-text-button-primary: #000;
 $color-text-button-secondary: #91fcf5;
 $color-boxshadow: #262d3f;
+
+/* border color*/
+$border-color-primary: #000000;
