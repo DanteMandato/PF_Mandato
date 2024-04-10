@@ -62,6 +62,27 @@ div.ir-arriba {
   color: #91fcf5;
 }
 
+header {
+  padding: 20px;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(145, 252, 245, 0.8784313725), rgba(152, 226, 255, 0.8784313725), rgba(111, 167, 252, 0.8784313725));
+  background-size: 400% 400%;
+  animation: gradient 12s ease-in infinite;
+  border-style: inset;
+  border-color: rgb(185, 255, 251);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .navbar {
   display: flex;
   flex-direction: row;
@@ -83,11 +104,17 @@ div.ir-arriba {
   justify-content: flex-end;
   text-align: center;
 }
-.navbar .menu .menu li {
+.navbar .menu li {
   margin-right: 20px;
 }
-.navbar .menu .menu li a:hover {
+.navbar .menu li a:hover {
   color: rgb(185, 255, 251);
+}
+.navbar .menu li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000000;
 }
 
 /* Estilos para dispositivos hasta 1023px de ancho */
@@ -121,17 +148,17 @@ div.ir-arriba {
   height: 720px;
   overflow: hidden;
 }
-.slider-frame .slider-frame ul {
+.slider-frame ul {
   display: flex;
   width: 300%;
   animation: slide 15s infinite alternate ease-in-out;
 }
-.slider-frame .slider-frame li {
+.slider-frame li {
   width: 100%;
   list-style: none;
   position: relative;
 }
-.slider-frame .slider-frame ul li img {
+.slider-frame li img {
   width: 100%;
 }
 .slider-frame .texto-slide {
@@ -253,7 +280,7 @@ h2.titulo-lesion {
   margin: 10px 5px;
   text-align: center;
   top: 20px;
-  background-color: rgb(109, 109, 109);
+  background-color: rgb(70, 70, 70);
   font-size: 28px;
 }
 
@@ -283,7 +310,7 @@ h2.titulo-lesion {
   justify-content: space-evenly;
 }
 .obras-sociales h3 {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #000000;
   width: 100%;
   display: inline-block;
   font-size: 28px;
@@ -388,7 +415,7 @@ h2.titulo-lesion {
   background-color: rgba(254, 253, 237, 0.9098039216);
   box-shadow: 2px 2px 5px #262d3f;
 }
-.hijo1 .hijo1 h3 {
+.hijo1 h3 {
   border-bottom: 2px solid #000000;
   width: 100%;
   font-size: 28px;

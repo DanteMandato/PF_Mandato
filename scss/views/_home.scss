@@ -22,7 +22,7 @@ h1 {
 }
 
 .parrafo-destacado2 {
-    color: rgb(47, 156, 3);
+    color: $color-text-destacado;
     font-size: 28px ;
     position: relative;
     text-align: center;
@@ -36,7 +36,7 @@ h2 {
         margin: 10px 5px;
         text-align: center;
         top: 20px;
-        background-color: rgb(109, 109, 109);
+        background-color: $background-color-footer;
         font-size: 28px;
     }
 }
@@ -71,7 +71,7 @@ h2 {
     justify-content: space-evenly;
 
     h3 {
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid $border-color-primary;
         width: 100%;
         display: inline-block;
         font-size: 28px;
