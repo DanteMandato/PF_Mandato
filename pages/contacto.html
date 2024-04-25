@@ -13,25 +13,46 @@
     <meta property="og:image" content="">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/main.css"/>
     <link rel="icon" type="image/png" sizes="32x32" href="../img/Icon/favicon.png">
     <title>Centro Kinesico: KinesiSalud/contacto</title>
+    <link rel="stylesheet" href="../css/main.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 <body>
     <header> 
-        <nav class="navbar">
-            <div class="container-logo">
-            <a href="../index.html"><img src="../img/Icon/favicon-32x32.png" alt="logo de la empresa"></a>
-            <h2>KinesiSalud</h2>
-            <h3>Kinesiología y Fisiatria</h3>
+        <nav class="navbar navbar-expand-lg navegador">
+            <div class="container-fluid">
+                <div class="logo">
+                    <a href="/index.html">
+                    <img src="../img/Icon/favicon-32x32.png" alt="Logotipo de la pagina">
+                    </a>
+                    <h2>KinesiSalud</h2>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menu" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./turnos.html">Turnos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        
+                    </ul>
+                </div>
             </div>
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./turnos.html">Turnos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
         </nav>
     </header>
 <div class="ir-arriba">
@@ -41,7 +62,6 @@
     <section>
         <h1 class="titulo-contacto">!Contactános¡</h1>
         <div class="infoContacto-padre">
-                
                 <div class="container-hijo">
                     <div class="infoContacto-hijo">
                         <h3>E-mail</h3>
@@ -67,11 +87,12 @@
                     <div class="infoContacto-hijo">
                         <h3>Ubicacion</h3>
                         <div class="icon-text">
-                            <img src="../img/Icon/Footer/icons8-dónde-32.png" alt="ubicacion">
+                            <a href="https://maps.app.goo.gl/2z4qFr4uVp1Z9urD6">
+                                <img src="../img/Icon/Footer/icons8-dónde-32.png" alt="ubicacion">
+                            </a> 
                         </div>
                     </div>
                 </div>
-
         <div class="containerForm">
             <form>
                 <legend>Envía tu Consulta</legend>
@@ -130,5 +151,6 @@
     </div>
     <p class="derechos">Derechos de autor © 2024 Clínica de Kinesiología. Todos los derechos reservados.</p>
 </footer>
+<script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

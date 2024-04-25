@@ -96,3 +96,47 @@
         }
     }
 }
+
+/* Media query para pantallas grandes */
+@media (max-width: 992px) {
+    .titulo-contacto{
+        margin: 10px 20px;
+        text-align: center;
+    }
+    .infoContacto-padre {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        .container-hijo {
+            justify-content: space-between;
+            & .infoContacto-hijo{
+                font-size: 16px;
+            }
+        }
+        & .containerForm { 
+        margin: 0; 
+        form{
+            width: 450px;
+        }
+        }
+    }
+}
+/* Media query para tabletas */
+@media (max-width: 576px) {
+    .infoContacto-padre {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        .container-hijo {
+            justify-content: space-between;
+            & .infoContacto-hijo{
+                font-size: 13px;
+            }
+        }
+        & .containerForm{
+        width: 360px;
+        }
+    }
+}
+
+

@@ -83,19 +83,19 @@ header {
     background-position: 0% 50%;
   }
 }
-.navbar {
+.navegador {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between !important;
 }
-.navbar .container-logo {
+.navegador .logo {
   display: inline;
 }
-.navbar .container-logo h2 {
+.navegador .logo h2 {
   display: inline;
   position: absolute;
 }
-.navbar .menu {
+.navegador .menu {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -104,13 +104,13 @@ header {
   justify-content: flex-end;
   text-align: center;
 }
-.navbar .menu li {
+.navegador .menu li {
   margin-right: 20px;
 }
-.navbar .menu li a:hover {
+.navegador .menu li a:hover {
   color: rgb(185, 255, 251);
 }
-.navbar .menu li a {
+.navegador .menu li a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
@@ -128,38 +128,47 @@ header {
   .menu li {
     margin: 10px 0;
   }
-  .navbar {
+  .navegador {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .texto-slide {
-    font-size: 20px;
-  }
 }
 /*diseño responsive exclusivo mobile hata 576px*/
 @media (max-width: 576px) {
+  header.navegador {
+    font-size: 14px;
+    align-content: center;
+  }
+  header.navegador .logo h2 {
+    position: none;
+  }
+  header.navegador .logo h3 {
+    display: none;
+  }
   .menu {
     font-size: 15px;
   }
 }
 .slider-frame {
+  position: relative;
   width: 100%;
-  height: 720px;
+  height: 620px;
   overflow: hidden;
 }
 .slider-frame ul {
+  padding: 0;
   display: flex;
   width: 300%;
   animation: slide 15s infinite alternate ease-in-out;
 }
 .slider-frame li {
-  width: 100%;
   list-style: none;
   position: relative;
 }
 .slider-frame li img {
   width: 100%;
+  height: auto;
 }
 .slider-frame .texto-slide {
   position: absolute;
@@ -193,16 +202,16 @@ header {
 }
 /*vista laptop/tablet hasta 1023px*/
 @media (max-width: 1023px) {
-  .texto-slide {
+  .slider-frame .texto-slide {
     font-size: 20px;
   }
 }
 /*diseño responsive exclusivo mobile hata 576px*/
 @media (max-width: 576px) {
-  .texto-slide {
+  .slider-frame .texto-slide {
     font-size: 15px;
-    margin-top: 0;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
   }
 }
 footer {
@@ -211,6 +220,7 @@ footer {
 }
 footer p {
   color: #fff;
+  margin-bottom: 0;
 }
 
 .footer-contacto {
@@ -230,6 +240,7 @@ footer p {
 .derechos {
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 0;
 }
 
 /*vista laptop/tablet hasta 1023px*/
@@ -240,14 +251,22 @@ footer p {
     justify-content: center;
     flex-direction: row;
   }
+  .footer-contacto img {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 /*diseño responsive exclusivo mobile hata 576px*/
 @media (max-width: 576px) {
   footer {
     font-size: 15px;
   }
+  footer img {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
-h1.h1-home {
+.h1-home {
   position: relative;
   padding: 20px;
   text-align: center;
@@ -320,12 +339,13 @@ h2.titulo-lesion {
 /*vista laptop/tablet hasta 1023px*/
 @media (max-width: 1023px) {
   /*h1*/
-  h1 {
+  .h1-home {
     font-size: 45px;
   }
   /*texto apertura debajo del h1*/
   .texto {
     font-size: 22px;
+    padding: 10px;
   }
   .parrafo-destacado2 {
     font-size: 30px;
@@ -354,8 +374,9 @@ h2.titulo-lesion {
 /*diseño responsive exclusivo mobile hata 576px*/
 @media (max-width: 576px) {
   /*article*/
-  h1 {
+  .h1-home {
     font-size: 35px;
+    margin-top: 0;
   }
   .texto {
     font-size: 22px;
@@ -403,7 +424,7 @@ h2.titulo-lesion {
 }
 
 .hijo1 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   text-align: center;
   padding: 20px;
@@ -456,6 +477,8 @@ h2.titulo-lesion {
 }
 .miembro--padre .miembro--hijo ul {
   list-style: none;
+  padding: 0;
+  margin-bottom: 0;
 }
 
 /*vista laptop/tablet hasta 1023px*/
@@ -471,18 +494,21 @@ h2.titulo-lesion {
     flex-direction: column;
   }
   .hijo1 {
-    font-size: 20px;
     width: 450px;
+    height: auto;
+  }
+  .hijo1 p {
+    font-size: 20px;
   }
 }
 /*diseño responsive exclusivo mobile/tablet hata 992px*/
 @media (max-width: 992px) {
   /*equipo de kinesiologos*/
-  .miembro-padre {
+  .miembro--padre {
     display: flex;
     flex-direction: column;
   }
-  .miembro-hijo img {
+  .miembro--hijo img {
     max-width: 100px;
     max-height: 100px;
   }
@@ -492,6 +518,23 @@ h2.titulo-lesion {
   font-size: 20px;
 }
 
+/*diseño responsive exclusivo mobile/tablet hata 576px*/
+@media (max-width: 576px) {
+  .hijo1 {
+    width: 450px;
+    height: auto;
+  }
+  .hijo1 p {
+    font-size: 16px;
+  }
+  .hijo1 h3 {
+    font-size: 20px;
+  }
+  .miembro--padre {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .titulo-servicios {
   text-align: center;
   width: 50%;
@@ -499,7 +542,6 @@ h2.titulo-lesion {
   padding: 10px;
   text-shadow: 0 2px 4px #262d3f;
   margin: auto;
-  margin-top: 60px;
   border-bottom: 2px solid #000000;
 }
 
@@ -510,7 +552,7 @@ h2.titulo-lesion {
   grid-template-rows: auto auto;
   gap: 20px;
   justify-items: center;
-  justify-content: space-between;
+  justify-content: center;
   align-items: stretch;
   margin: 20px;
   padding: 20px;
@@ -540,6 +582,32 @@ h2.titulo-lesion {
   transform: scale(1.1);
 }
 
+/*vista laptop/tablet hasta 1023px*/
+@media (max-width: 1023px) {
+  .hero-container .hijo-container {
+    width: 440px;
+  }
+}
+/*diseño responsive exclusivo mobile/tablet hata 992px*/
+@media (max-width: 992px) {
+  .hero-container {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+  }
+  .hero-container .hijo-container {
+    width: 480px;
+  }
+}
+/*diseño responsive exclusivo mobile/tablet hata 576px*/
+@media (max-width: 576px) {
+  .hero-container {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+  }
+  .hero-container .hijo-container {
+    width: 330px;
+  }
+}
 /* estilo de contacto */
 .titulo-contacto {
   margin-top: 10px;
@@ -636,6 +704,47 @@ h2.titulo-lesion {
   color: #91fcf5;
 }
 
+/* Media query para pantallas grandes */
+@media (max-width: 992px) {
+  .titulo-contacto {
+    margin: 10px 20px;
+    text-align: center;
+  }
+  .infoContacto-padre {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .infoContacto-padre .container-hijo {
+    justify-content: space-between;
+  }
+  .infoContacto-padre .container-hijo .infoContacto-hijo {
+    font-size: 16px;
+  }
+  .infoContacto-padre .containerForm {
+    margin: 0;
+  }
+  .infoContacto-padre .containerForm form {
+    width: 450px;
+  }
+}
+/* Media query para tabletas */
+@media (max-width: 576px) {
+  .infoContacto-padre {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .infoContacto-padre .container-hijo {
+    justify-content: space-between;
+  }
+  .infoContacto-padre .container-hijo .infoContacto-hijo {
+    font-size: 13px;
+  }
+  .infoContacto-padre .containerForm {
+    width: 360px;
+  }
+}
 .infoTurnos-padre {
   display: flex;
   flex-direction: row;
@@ -667,7 +776,10 @@ h2.titulo-lesion {
   align-items: flex-end;
   max-width: fit-content;
   margin-left: auto;
-  margin-right: 20px;
+  margin-right: 10px;
+}
+.infoTurnos-padre .container-turno p {
+  margin-bottom: 0;
 }
 .infoTurnos-padre .horarios {
   border: #000000;
@@ -683,6 +795,8 @@ h2.titulo-lesion {
 }
 .infoTurnos-padre .horarios ul {
   list-style: none;
+  padding: 0;
+  margin-bottom: 0;
 }
 .infoTurnos-padre .contacto {
   display: flex;
@@ -692,6 +806,32 @@ h2.titulo-lesion {
   margin-right: 188px;
 }
 
+/*diseño responsive exclusivo mobile/tablet hata 992px*/
+@media (max-width: 992px) {
+  .infoTurnos-padre {
+    flex-direction: column;
+  }
+  .infoTurnos-padre .texto-info {
+    font-size: 18px;
+    padding: 0;
+  }
+  .infoTurnos-padre .container-turno {
+    margin: 0;
+    align-items: center;
+  }
+  .infoTurnos-padre .container-turno .contacto {
+    margin: 0;
+  }
+  .infoTurnos-padre .container-turno .horarios {
+    margin: 0 10px;
+  }
+}
+/*diseño responsive exclusivo mobile/tablet hata 576px*/
+@media (max-width: 576px) {
+  .infoTurnos-padre .texto-info p {
+    display: none;
+  }
+}
 /* mapa */
 iframe {
   width: 100%;

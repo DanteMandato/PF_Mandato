@@ -28,7 +28,10 @@
         align-items: flex-end; 
         max-width: fit-content; 
         margin-left: auto; 
-        margin-right: 20px; 
+        margin-right: 10px; 
+        p{
+            margin-bottom: 0;
+        }
     }
     .horarios{
         border: $border-color-primary;
@@ -43,6 +46,8 @@
         }
         ul{
             list-style: none;
+            padding: 0;
+            margin-bottom: 0;
         }
     }
     .contacto{
@@ -51,5 +56,35 @@
         flex-direction: row;
         align-items: center;
         margin-right: 188px;
+    }
+}
+
+/*diseño responsive exclusivo mobile/tablet hata 992px*/
+@media (max-width: 992px){
+.infoTurnos-padre{
+    flex-direction: column;
+        & .texto-info {
+        font-size: 18px;
+        padding: 0;
+    }
+    & .container-turno{
+        margin: 0;
+        align-items: center;
+        & .contacto{
+            margin: 0;
+        }
+        & .horarios{
+            margin: 0 10px;
+        }
+    }
+    }
+}
+
+/*diseño responsive exclusivo mobile/tablet hata 576px*/
+@media (max-width: 576px) {
+    .infoTurnos-padre .texto-info{
+        & p{
+            display: none;
+        }
     }
 }

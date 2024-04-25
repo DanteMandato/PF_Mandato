@@ -1,6 +1,5 @@
 // Título y texto del home
-h1 {
-    &.h1-home {
+.h1-home {
         position:relative;
         padding: 20px;
         text-align: center;
@@ -9,7 +8,7 @@ h1 {
         font-style:oblique;
         margin-top: 200px
     }
-}
+
 
 .texto {
     font-size: 26px;
@@ -82,12 +81,13 @@ h2 {
 /*vista laptop/tablet hasta 1023px*/
 @media (max-width: 1023px) {
     /*h1*/
-    h1{
+    .h1-home{
         font-size: 45px;
     }
     /*texto apertura debajo del h1*/
     .texto{
         font-size: 22px;
+        padding: 10px;
     }
     .parrafo-destacado2{
         font-size: 30px;
@@ -117,8 +117,9 @@ h2 {
 
 @media (max-width: 576px){
         /*article*/
-        h1{
+        .h1-home{
             font-size: 35px;
+            margin-top: 0;
         }
         .texto{
             font-size: 22px;

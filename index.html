@@ -15,23 +15,44 @@
 <link rel="icon" type="image/png" sizes="32x32" href="img/Icon/favicon.png"> 
 <title>Centro Kinesico: KinesiSalud/home</title> 
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
     <header> 
-        <nav class="navbar">
-                <div class="container-logo">
-                <a href="index.html"><img src="img/Icon/favicon-32x32.png" alt="logo de la empresa"></a>
-                <h2>KinesiSalud</h2>
-                <h3>Kinesiología y Fisiatria</h3>
+        <nav class="navbar navbar-expand-lg navegador">
+            <div class="container-fluid">
+                <div class="logo">
+                    <a href="/index.html">
+                    <img src="./img/Icon/favicon-32x32.png" alt="Logotipo de la pagina">
+                    </a>
+                    <h2>KinesiSalud</h2>
                 </div>
-                <ul class="menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="pages/servicios.html">Servicios</a></li>
-                    <li><a href="pages/turnos.html">Turnos</a></li>
-                    <li><a href="pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menu" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/turnos.html">Turnos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <div class="ir-arriba">
         <a href="index.html"><img src="img/Icon/Footer/icons8-flecha-contraer-32.png" alt="arrow"></a>
@@ -52,7 +73,7 @@
                 </div>
             </li>
             <li>
-                <img src="img/home/head/S1.jpg" alt="foto 3">
+                <img src="img/home/head/S3.jpg" alt="foto 3">
                 <div class="texto-slide">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illum harum, pariatur perferendis ipsam exercitationem, dicta nobis delectus culpa quisquam eius inventore et sapiente, nemo nesciunt quibusdam tempore dolorum ex.</p>
                 </div>
@@ -122,7 +143,8 @@
     <a href="https://maps.app.goo.gl/2z4qFr4uVp1Z9urD6">Ubicacion</a>
 </div>
 <p class="derechos">Derechos de autor © 2024 Clínica de Kinesiología. Todos los derechos reservados.</p>
-</footer>  
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 

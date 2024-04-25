@@ -5,7 +5,6 @@
     padding: 10px;
     text-shadow: 0 2px 4px $color-boxshadow;
     margin: auto;
-    margin-top: 60px;
     border-bottom: 2px solid $border-color-primary;
 }
 
@@ -17,11 +16,10 @@
     grid-template-rows: auto auto;
     gap: 20px;
     justify-items: center;
-    justify-content: space-between;
+    justify-content: center;
     align-items: stretch;
     margin: 20px;
     padding: 20px;
-
     .hijo-container {
         box-shadow: 2px 2px 6px $color-boxshadow;
         padding: 20px;
@@ -47,3 +45,31 @@
         }
     }
 }
+
+/*vista laptop/tablet hasta 1023px*/
+@media (max-width: 1023px) {
+    .hero-container .hijo-container {
+        width: 440px;
+    }
+}
+/*diseño responsive exclusivo mobile/tablet hata 992px*/
+@media (max-width: 992px){
+    .hero-container{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+        .hijo-container {
+            width: 480px;
+        }
+    }
+}
+/*diseño responsive exclusivo mobile/tablet hata 576px*/
+@media (max-width: 576px) {
+    .hero-container{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+        .hijo-container {
+            width: 330px;
+        }
+    }
+}
+

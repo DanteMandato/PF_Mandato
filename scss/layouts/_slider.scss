@@ -1,18 +1,20 @@
 .slider-frame {
+    position: relative;
 	width: 100%;
-    height: 720px;
+    height: 620px;
 	overflow: hidden;
     ul {
+        padding: 0;
         display: flex;
         width: 300%;
         animation: slide 15s infinite alternate ease-in-out;
     }
     li {
-        width: 100%;
         list-style: none;
         position: relative;
         img {
         width: 100%;
+        height: auto;
     }
     }
     .texto-slide{
@@ -38,17 +40,21 @@
 
 /*vista laptop/tablet hasta 1023px*/
 @media (max-width: 1023px) {
-    .texto-slide{
+    .slider-frame {
+        .texto-slide{
         font-size: 20px;
-    } 
+    }
+}
 }
 
 /*diseño responsive exclusivo mobile hata 576px*/
 
 @media (max-width: 576px){
-    .texto-slide{
+    .slider-frame {
+        .texto-slide{
         font-size: 15px;
-        margin-top: 0;
-        padding: 20px;
+        margin: 0;
+        padding: 0;
     }
+}
 }
