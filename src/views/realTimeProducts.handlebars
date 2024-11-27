@@ -1,0 +1,40 @@
+<header>
+    <h1>INICIO - Productos en Tiempo Real</h1>
+</header>
+
+<main>
+    <section>
+        <h3>Productos</h3>
+        <div class="products">
+            <div class="products__list">
+                <ul class="products__list__item" id="products-list"></ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Formulario de Productos</h3>
+        <form class="products__form" id="products-form">
+            <input type="text" name="title" placeholder="Nombre del producto">
+            <div>¿Está activo?<input type="checkbox" name="status"></div>
+            <input type="number" name="stock" placeholder="Stock del producto">
+
+            <input type="submit" value="Guardar" style="width: 50%">
+        </form>
+    </section>
+
+    <section>
+        <h3>Eliminación de los Productos</h3>
+        <div class="products__delete">
+            <input type="number" class="products__delete__input" id="input-product-id"
+                placeholder="ID del Producto">
+            <button id="btn-delete-product">Eliminar</button>
+        </div>
+    </section>
+
+    <p class="error-message" id="error-message"></p>
+</main>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/api/public/js/products.socket.js"></script>
+<script src="/api/public/js/products.js"></script>

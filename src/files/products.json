@@ -1,0 +1,24 @@
+[
+	{
+		"id": 2,
+		"title": "Producto B",
+		"description": "Descripción del producto B",
+		"code": "PRD002",
+		"price": 200,
+		"status": true,
+		"stock": 30,
+		"category": "Categoría B",
+		"thumbnails": []
+	},
+	{
+		"id": 3,
+		"title": "Producto C",
+		"description": "Descripción del producto C",
+		"code": "PRD003",
+		"price": 200,
+		"status": true,
+		"stock": 30,
+		"category": "Categoría C",
+		"thumbnails": []
+	}
+]
